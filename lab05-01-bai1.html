@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Login Information</h2>
+    <hr>
+    <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Set</label><br>
+            <input type="button" value="Login" onclick="Information()">
+            <input type="reset" value="Reset">
+        </form>
+            <script>
+                function Information () {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                    if (username == "" || password == "" ){
+                        alert("Tài khoản hoặc mật khẩu không được bỏ trống");
+                        return false;
+                    }else{
+                        alert("Đăng nhập thành công!");
+                        return true ;}
+                        console.log( username);
+                        console.log( password);
+        }
+            </script>
+</body>
+</html>

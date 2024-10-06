@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+<body>
+    <script>
+       var arr=[22,1,25,84,95,1000,110,111] ;
+       var sole = sochan = 0;
+       var tongle = tongchan = 0;
+       document.writeln("Số phần từ trong mảng:"+arr.length+" <br>");
+       for(i=1;i<arr.length;i++){
+        if(arr[i]%2==0){
+            tongchan+=arr[i];
+            if(sochan.length==0){
+                sochan=arr[i];
+            }else{
+                sochan += ","+arr[i];
+            }
+        }else{
+            tongle+=arr[i];
+            if(sole.length==0){
+                sole==arr[i];
+            }else{
+                sole += ","+arr[i];
+            }
+        }
+       }
+       document.writeln("Trong mảng có các số chẵn là:"+sochan+" <br> ");
+       document.writeln("Tổng các số chẵn là:"+tongchan+" <br>");
+       document.writeln("Trong mảng có các số lẻ là:"+sole+" <br> ");
+       document.writeln("Tổng các số chẵn là:"+tongle+" <br>");
+       </script>
+</body>
+</html>
